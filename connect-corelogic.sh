@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# prompt for domain password
+printf "Enter domain password: "
+stty -echo
+read password < /dev/tty
+stty echo
+
 # connect to vpn
 sudo vpnc --enable-1des corelogic.conf
 
@@ -10,5 +16,5 @@ sudo route add -net 192.168.0.10 netmask 255.255.255.255 tun0 # svn.corelogic.lo
 sudo route add -net 192.168.0.26 netmask 255.255.255.255 tun0 # framework2.corelogic.local
 
 # mount filesystems
-sudo mount -t cifs -o username=james.booth,password=<password>,uid=james //192.168.0.26/Share ~/mnt/framework2/
+sudo mount -t cifs -o username=james.booth,password=$password,uid=james //192.168.0.26/Share ~/mnt/framework2/
 
