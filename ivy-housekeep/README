@@ -1,4 +1,5 @@
 ivy-housekeep.sh
+----------------
 
 Currently takes two parameters:
 
@@ -9,3 +10,7 @@ Example call:
 
 ./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/trunk/corelogic-interfaceserver 3
 
+ivy-batch.sh
+------------
+
+Until I've written a wrapper script, this just calls the houskeeping script on a number of known directories.
