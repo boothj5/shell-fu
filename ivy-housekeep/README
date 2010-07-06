@@ -1,0 +1,11 @@
+ivy-housekeep.sh
+
+Currently takes two parameters:
+
+1. Folder where the artefact are, e.g. /home/james/mnt/framework2/ivyrep/corelogic/trunk/corelogic-interfaceserver
+2. How many revisions to keep, e.g. 3
+
+Example call:
+
+./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/trunk/corelogic-interfaceserver 3
+
