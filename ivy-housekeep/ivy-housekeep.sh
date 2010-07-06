@@ -56,7 +56,7 @@ do
         while read another_line
 	do
 	    echo Deleting ... ${another_line}
-#           rm $1/*${another_line}*
+            rm $1/*${another_line}.*
             num_dev_delete=`expr $num_dev_delete - 1`
             if [ $num_dev_delete = 0 ]
             then
