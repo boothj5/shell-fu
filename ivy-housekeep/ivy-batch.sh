@@ -8,6 +8,10 @@ folders=`ls -1 $ivyLocation`
 # List of folders to skip separated by spaces
 skipList=
 
+echo folders:
+echo $folders
+echo
+
 for folder in $folders; do
 
 #	if [ "$folder" in $skipList ] continue;
