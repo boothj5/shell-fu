@@ -5,6 +5,7 @@ printf "Enter domain password: "
 stty -echo
 read password < /dev/tty
 stty echo
+echo
 
 # connect to vpn
 sudo vpnc --enable-1des corelogic.conf
