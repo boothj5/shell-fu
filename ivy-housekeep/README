@@ -13,4 +13,4 @@ Example call:
 ivy-batch.sh
 ------------
 
-Until I've written a wrapper script, this just calls the houskeeping script on a number of known directories.
+Loops through ivy location and currently batch calls ivy-housekeep.sh for corelogic-frameworki and corelogic-interfaceserver
