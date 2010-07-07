@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ivyLocation=/home/james/mnt/framework2/ivyrep/corelogic
+components="corelogic-frameworki corelogic-interfaceserver corelogic-jobs corelogic-common"
 keepLast=3
 
 # Piped list of folders @ivyLocation, separated by new lines (-1)
@@ -11,18 +12,18 @@ skipList=
 echo folders:
 echo $folders
 echo
+echo components:
+echo $components
+echo
 
 for folder in $folders; do
-
 #	if [ "$folder" in $skipList ] continue;
 	
-	# Check for existence of corelogic-frameworki folder
-	if [ -d "$ivyLocation/$folder/corelogic-frameworki" ]; then
-		echo "./ivy-housekeep.sh $ivyLocation/$folder/corelogic-frameworki $keepLast"
-	fi
-	
-	# Check for existence of corelogic-interfaceserver folder
-	if [ -d "$ivyLocation/$folder/corelogic-interfaceserver" ]; then
-		echo "./ivy-housekeep.sh $ivyLocation/$folder/corelogic-interfaceserver $keepLast"	
-	fi
+	for comp in $components; do
+
+        	#Check for existence of component folder
+		if [ -d "$ivyLocation/$folder/$comp" ]; then
+			echo "./ivy-housekeep.sh $ivyLocation/$folder/$comp $keepLast"
+		fi
+	done
 done

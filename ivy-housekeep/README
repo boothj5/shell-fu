@@ -13,4 +13,4 @@ Example call:
 ivy-batch.sh
 ------------
 
-Loops through ivy location and currently batch calls ivy-housekeep.sh for corelogic-frameworki and corelogic-interfaceserver
+Loops through ivy location and batch calls ivy-housekeep.sh for the defined list of components
