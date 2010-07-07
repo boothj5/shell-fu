@@ -1,62 +1,24 @@
 #!/bin/bash
 
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/trunk/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3040-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3050-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3060/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3060-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3502/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3510-cp-beta2/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3530-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/354/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3540-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3550-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3560/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/35xx-maint/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3610/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3620/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/cafm-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/clg-rep/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/consolidation/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/contactpoint-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/edrms-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/esap-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/f2-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/lcc-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/lcc-edrms-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/maintenance/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/p13n-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/portlet-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/scpea-dev/corelogic-frameworki 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/trunk/corelogic-frameworki 3
+ivyLocation=/home/james/mnt/framework2/ivyrep/corelogic
+keepLast=3
 
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/trunk/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3040-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3050-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3060/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3060-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3502/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3510-cp-beta2/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3530-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/354/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3540-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3550-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3560/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/35xx-maint/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3610/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/3620/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/cafm-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/clg-rep/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/consolidation/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/contactpoint-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/edrms-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/esap-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/f2-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/lcc-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/lcc-edrms-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/maintenance/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/p13n-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/portlet-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/scpea-dev/corelogic-interfaceserver 3
-./ivy-housekeep.sh /home/james/mnt/framework2/ivyrep/corelogic/trunk/corelogic-interfaceserver 3
+# Piped list of folders @ivyLocation, separated by new lines (-1)
+folders=`ls -1 $ivyLocation`
+# List of folders to skip separated by spaces
+skipList=
 
+for folder in $folders; do
+
+#	if [ "$folder" in $skipList ] continue;
+	
+	# Check for existence of corelogic-frameworki folder
+	if [ -d "$ivyLocation/$folder/corelogic-frameworki" ]; then
+		echo "./ivy-housekeep.sh $ivyLocation/$folder/corelogic-frameworki $keepLast"
+	fi
+	
+	# Check for existence of corelogic-interfaceserver folder
+	if [ -d "$ivyLocation/$folder/corelogic-interfaceserver" ]; then
+		echo "./ivy-housekeep.sh $ivyLocation/$folder/corelogic-interfaceserver $keepLast"	
+	fi
+done
