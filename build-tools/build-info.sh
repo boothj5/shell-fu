@@ -16,5 +16,7 @@ for comp in $components; do
 	printf "\tRevision: %s\n" $rev
 	printf "Depends on :\n"
 	cat $1/$comp/dependencies.properties | grep ^corelogic | grep -v branch | sed 's/\(^corelogic.*\)\.rev=\(.*\)/\t\1: \2/g'
-	echo
+	printf "In branches:\n"
+	cat $1/$comp/dependencies.properties | grep ^corelogic | grep -v rev | sed 's/\(^corelogic.*\)\.branch=\(.*\)/\t\1: \2/g'
+	echo	
 done
