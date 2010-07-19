@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # unmount filesystems
-sudo umount /mnt/framework2
+umount /home/james/mnt/framework2
 
 # disconnect from vpn
-sudo vpnc-disconnect
+vpnc-disconnect
