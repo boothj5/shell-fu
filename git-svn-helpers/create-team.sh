@@ -10,7 +10,6 @@ public=projects-git-TEAM-pub
 
 # create folders
 mkdir $base_path/$private
-mkdir $base_path/$public
 
 curl -s $release_url | sed 's/.*\(corelogic-[a-z0-9\-]*\).*/\1/g' | grep corelogic | grep -v jamesbuntu | sort -u > /tmp/teamrepolist
 
