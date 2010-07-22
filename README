@@ -1,0 +1,18 @@
+SHELL-FU
+--------
+
+This repository contains random shell scripts I've written for automating various tasks.
+
+It's split into directories with scripts roughly grouped by purpose.
+
+-build-tools		Scripts written to help with frameworki build tasks
+-classic-book		Exercises from the Classic Shell Scripting book
+-git-svn-helpers	Migrating our SVN repository to Git
+-ivy-housekeep		Keeping the Ivy repository tidy
+-networking		Random stuff to do with networking, VPN etc
+
+Each directory has its own README with a description of each script.
+
+If you have your own shell fu, or you want to make improvements to these scripts, you can clone my repository with:
+
+	git clone git://jamesbuntu.corelogic.local/shell-fu.git shell-fu

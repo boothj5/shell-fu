@@ -1,0 +1,2 @@
+clone-svn.sh  		Clone all components from SVN
+make-public.sh		Publish all of the components that have been cloned from SVN
