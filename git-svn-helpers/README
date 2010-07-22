@@ -1,2 +1,26 @@
-clone-svn.sh  		Clone all components from SVN
-make-public.sh		Publish all of the components that have been cloned from SVN
+README
+------
+
+The basic order of running scripts is:
+
+1) Run "create-release.sh" to clone SVN and create the RELEASE repository
+2) Run "make-public.sh RELEASE" to make public clones of the RELEASE repository
+3) Run "create-team.sh" to clone the RELEASE repoitory and create a TEAM repository
+4) Run "make-public.sh TEAM" to make public clones of the TEAM repository
+
+create-release.sh  	
+-----------------
+Clone all components from SVN.
+There is config at the beginning of the script
+
+create-team.sh
+--------------
+Clone the RELEASE repository created by create-release.sh.
+Used to create TEAM repositories.
+Uses curl to get the list of repositories to create.
+There is config at the beginning of the script
+
+make-public.sh
+--------------
+Takes a parameter used for the folder containing components to be made public.
+There is also config at the beginning of the script.
