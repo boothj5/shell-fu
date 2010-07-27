@@ -1,2 +1,3 @@
 build-info.sh		Spits out dependency information about all components in a folder
 findclass.sh		Looks through all the jar files in a directory for a given class
+find-crlf.sh		Recursively lists file with CRLF line endings in the passed directory
