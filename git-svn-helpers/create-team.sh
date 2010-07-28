@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# assume this is run in the directory where the projects-git-RELEASE folder is.
-
 release_url=http://jamesbuntu.corelogic.local/gitweb-release/
 release_git_url=git://jamesbuntu.corelogic.local/projects-git-RELEASE-pub
 base_path=/home/james
