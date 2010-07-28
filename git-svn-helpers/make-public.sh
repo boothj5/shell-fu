@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# assume this is run in the directory where the projects-git-RELEASE folder is.
-
 base_path=/home/james
 private=projects-git-$1
 public=projects-git-$1-pub
