@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# assume this is run in the directory where the projects-git-RELEASE folder will be created
 # assume user has authenticated with SVN already
 
 base_path=/home/james
