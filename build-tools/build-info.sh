@@ -12,8 +12,11 @@ echo
 for comp in $components; do
 	echo Component: 
 	printf "\t%s\n" $comp
-        rev=`cat $1/$comp/build.properties | grep module.revision | sed 's/module.revision=\([0-9]\..*$\)/\1/g'`
+        
+	rev=`cat $1/$comp/build.properties | grep module.revision | sed 's/module.revision=\([0-9]\..*$\)/\1/g'`
+	branch=`cat $1/$comp/build.properties | grep module.branch | sed 's/module.branch=\(.*$\)/\1/g'`
 	printf "\tRevision: %s\n" $rev
+	printf "\tBranch: %s\n" $branch
 	printf "Depends on :\n"
 	cat $1/$comp/dependencies.properties | grep ^corelogic | grep -v branch | sed 's/\(^corelogic.*\)\.rev=\(.*\)/\t\1: \2/g'
 	printf "In branches:\n"
