@@ -23,7 +23,7 @@ for folder in $folders; do
 
         	#Check for existence of component folder
 		if [ -d "$ivyLocation/$folder/$comp" ]; then
-			echo "./ivy-housekeep.sh $ivyLocation/$folder/$comp $keepLast"
+			./ivy-housekeep.sh $ivyLocation/$folder/$comp $keepLast
 		fi
 	done
 done
