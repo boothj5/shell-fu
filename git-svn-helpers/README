@@ -24,3 +24,11 @@ make-public.sh
 --------------
 Takes a parameter used for the folder containing components to be made public.
 There is also config at the beginning of the script.
+
+restore-svn.sh
+--------------
+Script to remove and recreate the SVN repo.  I.e. start the whole setup again from scratch.
+
+svnrepo2unix.sh
+---------------
+Checkout the SVN repo, convert everything to Unix line endings and commit,
