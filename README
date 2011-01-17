@@ -13,6 +13,3 @@ It's split into directories with scripts roughly grouped by purpose.
 
 Each directory has its own README with a description of each script.
 
-If you have your own shell fu, or you want to make improvements to these scripts, you can clone my repository with:
-
-	git clone git://jamesbuntu.corelogic.local/shell-fu.git shell-fu
